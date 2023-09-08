@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Headlines</title>
+</head>
+<body>
+    <h1>Headlines for {{ selected_date }}</h1>
+    <ul>
+        {% for headline in headlines %}
+            <li>{{ headline.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
